@@ -195,6 +195,21 @@ ul#menu li a:hover
   color: white;
   border-bottom: 3px solid;
 } 
+/*images qui changent */
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+    opacity: 0;
+}
+#btnControl2 {
+    display: none;
+}
+
+#btnControl2:checked + label > img {
+    opacity: 0;
+}
 
 
 	</style>
@@ -213,10 +228,13 @@ ul#menu li a:hover
     <span class = h9>scrutin direct</h9> 
     <span class = h10>scrutin indirect</h10> 
     <span class = h11>Le scrutin direct est le scrutin où les citoyens votent directement pour quelqu'un. Le scrutin indirect est le scrutin où les citoyens élisent de grands électeurs qui éliront eux-même les membres de la chambre. Les grands électeurs ne sont pas obligés de voter dans le même sens que les citoyens qui les ont élus.<br><br>En France, on élit indirectement le Sénat par l'intermédiaire des collectivités territoriales.</h11> 
-    <span class = h12>Choisis le mode de scrutin.</span>  
+    <span class = h12>Choisis le mode de scrutin :</span>  
     <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
     <h1 id="header"><a href="comparative_democracies.html">comparative democracies</a></h1>
     
+</ul>
+    <div id='affichageImage'></div>
+
     <nav>
       <ul id="menu">
         <li><a href="hein.html">la démocratie, hein ?</a></li>
