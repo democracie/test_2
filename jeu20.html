@@ -49,7 +49,7 @@ div#conteneur h2 /*red*/
   position: fixed;
   left: 500px;
   right: 500px;
-  top: 580px;
+  top: 590px;
 }  
 .h3 a/*suivant*/
 {
@@ -70,41 +70,35 @@ div#conteneur h2 /*red*/
 {
   position: fixed;
   left: 480px;
-  top: 320px;
+  top: 310px;
 }
 .h5 /*image 1*/
 {
   position: fixed;
   left: 480px;
-  top: 320px;
+  top: 310px;
 }
 .h6 /*image 2*/
 {
   position: fixed;
   left: 670px;
-  top: 320px;
+  top: 310px;
 }
 .h7 /*image 2*/
 {
   position: fixed;
   left: 670px;
-  top: 320px;
+  top: 310px;
 }
 .h7 a/*image*/
 {
   opacity: 1;
 }
-.h8 a/*ampoule*/
-{
-  position: fixed;
-  left: 850px;
-  top: 270px;
-}
 .h9 /*texte 1*/
 {
   position: fixed;
-  left: 490px;
-  top: 500px;
+  left: 500px;
+  top: 530px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -117,8 +111,8 @@ div#conteneur h2 /*red*/
 .h10 /*texte 2*/
 {
   position: fixed;
-  left: 670px;
-  top: 500px;
+  left: 680px;
+  top: 530px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -128,12 +122,18 @@ div#conteneur h2 /*red*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
+.h8 a/*ampoule*/
+{
+  position: fixed;
+  left: 900px;
+  top: 290px;
+}
 .h11 /*texte ampoule*/
 {
   position: fixed;
-  left: 885px;
-  right: 150px;
-  top: 330px;
+  left: 930px;
+  right: 120px;
+  top: 350px;
   text-align: left; 
   font-family: times; 
   font-weight: normal;
@@ -147,7 +147,7 @@ div#conteneur h2 /*red*/
 .h12 /*sous-titre*/
 {
   position: fixed;
-  left: 520px;
+  left: 535px;
   right: 250px;
   top: 270px;
   text-align: left; 
@@ -159,6 +159,12 @@ div#conteneur h2 /*red*/
   color: black;
   text-rendering: optimizeLegibility;
   word-break: break-word;
+}
+.retour a/*flèche retour*/
+{
+  position: fixed;
+  left: 250px;
+  top: 220px;
 }
 ul#menu /*parcours & bibliothèque & info*/
 {
@@ -195,6 +201,21 @@ ul#menu li a:hover
   color: white;
   border-bottom: 3px solid;
 } 
+/*images qui changent */
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+    opacity: 0;
+}
+#btnControl2 {
+    display: none;
+}
+
+#btnControl2:checked + label > img {
+    opacity: 0;
+}
 
 
 	</style>
@@ -203,20 +224,24 @@ ul#menu li a:hover
   <div id="conteneur">
     <span class = h2>ÉLIS LA SECONDE CHAMBRE</span>
     <span class = h3><a href="jeu21.html">suivant</a></span>
-    <span class = h4><a><img src="images/parcours50.jpg" width="100px" height="auto"></a></span>
+    <span class = h4><a><img src="images/parcours18.jpg" width="140px" height="auto"></a></span>
     <span class = h5><input type="checkbox" id="btnControl"/>
-    <label class="btn" for="btnControl"><img src="images/parcours49.jpg" id="btnLeft" width="100px" height="auto"></label></span>
-    <span class = h6><a><img src="images/parcours52.jpg" width="100px" height="auto"></a></span>
+    <label class="btn" for="btnControl"><img src="images/parcours17.jpg" id="btnLeft" width="140px" height="auto"></label></span>
+    <span class = h6><a><img src="images/parcours20.jpg" width="140px" height="auto"></a></span>
     <span class = h7><input type="checkbox" id="btnControl2"/>
-    <label class="btn" for="btnControl2"><img src="images/parcours51.jpg" id="btnLeft" width="100px" height="auto"></label></span>
+    <label class="btn" for="btnControl2"><img src="images/parcours19.jpg" id="btnLeft" width="140px" height="auto"></label></span>
     <span class = h8><a><img src="images/symbole6.png" width="80px" height="auto"></a></span>
     <span class = h9>scrutin direct</h9> 
     <span class = h10>scrutin indirect</h10> 
     <span class = h11>Le scrutin direct est le scrutin où les citoyens votent directement pour quelqu'un. Le scrutin indirect est le scrutin où les citoyens élisent de grands électeurs qui éliront eux-même les membres de la chambre. Les grands électeurs ne sont pas obligés de voter dans le même sens que les citoyens qui les ont élus.<br><br>En France, on élit indirectement le Sénat par l'intermédiaire des collectivités territoriales.</h11> 
-    <span class = h12>Choisis le mode de scrutin.</span>  
+    <span class = h12>Choisis le mode de scrutin :</span>  
+    <span class="retour"><a href="jeu19.html"><img src="images/symbole9.png" width="70px" height="auto"></a></span>
     <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
     <h1 id="header"><a href="comparative_democracies.html">comparative democracies</a></h1>
     
+</ul>
+    <div id='affichageImage'></div>
+
     <nav>
       <ul id="menu">
         <li><a href="hein.html">la démocratie, hein ?</a></li>
