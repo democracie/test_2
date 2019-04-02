@@ -34,20 +34,28 @@ div#conteneur h2 /*red*/
 .h3 /*image*/
 { 
   position: absolute;
-  left: 160px;
+  left: 200px;
   top: 200px;
 }
 .h4 a /*flèche*/
 { 
-  position: relative;
+  position: absolute;
   left: 550px;
-  top: 8250px;
+  top: 2900px;
+}
+.h4 a:hover /*flèche*/
+{
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
 }
 .h5 /*white*/
 { 
-  position: relative;
+  position: absolute;
   left: 550px;
-  top: 8350px;
+  top: 3100px;
 }
 ul#menu /*parcours & bibliothèque & info*/
 {
@@ -83,14 +91,12 @@ ul#menu li a:hover
 {
   color: white;
   border-bottom: 3px solid;
-} color: grey;
 } 
-
   </style>
   <body>
   
   <div id="conteneur">
-     <span class = h3><img src="images/respect.png" width="1000px" height="auto"></span>
+     <span class = h3><img src="images/referendum.png" width="800px" height="auto"></span>
      <span class = h4><a href="schemas.html"><img src="images/symboles10.png" width="150px" height="auto"></a></span>
      <span class = h5><img src="images/white.png" width="1100px" height="auto"></span>
      <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>

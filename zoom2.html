@@ -34,20 +34,28 @@ div#conteneur h2 /*red*/
 .h3 /*image*/
 { 
   position: absolute;
-  left: 150px;
-  top: 200px;
+  left: 200px;
+  top: 280px;
 }
 .h4 a /*flèche*/
 { 
-  position: relative;
+  position: absolute;
   left: 550px;
-  top: 2600px;
+  top: 3200px;
 }
-.h5 /*chite*/
+.h4 a:hover /*flèche*/
+{
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
+}
+.h5 /*white*/
 { 
-  position: relative;
+  position: absolute;
   left: 550px;
-  top: 2800px;
+  top: 3300px;
 }
 ul#menu /*parcours & bibliothèque & info*/
 {
@@ -99,9 +107,9 @@ ul#menu li a:hover
       <ul id="menu">
         <li><a href="hein.html">la démocratie, hein ?</a></li>
         <li><a href="jeu.html">explore les démocraties</a></li>
-        <li><a href="approfondis.html">approfondis les démocraties</a></li>
+        <li id="en-cours"><a href="approfondis.html">approfondis les démocraties</a></li>
         <li><a href="schemas.html">schémas</a></li>
-        <li id="en-cours"><a href="definitions.html">définitions</a></li>
+        <li><a href="definitions.html">définitions</a></li>
         <li><a href="info.html">info.</a></li>
         <li><a href="kit.html">kit</a></li>
       </ul>   
