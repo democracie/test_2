@@ -1,6 +1,6 @@
 # democratie
 
-Le site est disponible sur cette url : https://marie-lorraine.github.io/democratie/comparative_democracies.html
+Le site est disponible sur cette url : https://marie-lorraine.github.io/democratie/comparative_democracies_2/INDEX.html
 
 Pour mettre à jour le site, il faut modifier le code avec Sublime Text, puis entrer cette commande :
 - Pomme + shift + p
